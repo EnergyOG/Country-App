@@ -1,12 +1,50 @@
-# React + Vite
+# 🌍 Country Explorer App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application that consumes a **remote, deployed backend service** to display country data in an interactive and user-friendly way. The app allows users to explore, search, filter, and compare countries while viewing detailed information without leaving the browser tab.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🌐 **Remote Backend Integration**  
+  Fetches country data from a deployed backend service using REST APIs.
+  [Remote backend service](https:///restcounties.com/v3.1/all)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+- ⚛️ **Built with React**
+  - Functional components architecture
+  - State management using **`useState`**
+  - Data fetching and side effects handled with **`useEffect`**
+
+- 🎨 **Material UI (MUI)**
+  - Responsive and accessible UI components
+  - Clean, modern design system
+
+- 🌙 **Dark Mode / Light Mode**
+  - Toggle between night mode and day mode for better user experience
+
+- 🔍 **Search Functionality**
+  - Real-time search by country name
+
+- 🔃 **Sorting & Filtering**
+  - Alphabetical sorting (**A – Z**)
+  - Filtering bar to organize country listings
+
+- 🎨 **Population-Based Color Gradient**
+  - Visual color grading based on population size
+  - Makes population comparison quick and intuitive
+
+- 📄 **Country Details View**
+  - Select a country to view more detailed information
+  - Navigation happens within the **same browser tab** (Single Page Application behavior)
+
+---
+
+## Tech Stack
+
+- **Frontend:** React, JavaScript
+- **UI Library:** Material UI (MUI)
+- **State Management:** React Hooks (`useState`, `useEffect`)
+- **Backend:** Remote deployed REST API
+- **Routing:** TankStack
+
