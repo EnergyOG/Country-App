@@ -12,7 +12,7 @@ function CountryDetails() {
 
   if (isLoading) return <LoadingPage />;
   if (error) return <ErrorPage />;
-  if (!selectedCountry) return <PageNotFound />
+  if (!selectedCountry || selectedCountry.length === 0) return <PageNotFound />
 
   return (
     <div className="pt-15 min-h-screen px-4 sm:px-8 lg:px-20">
@@ -40,13 +40,13 @@ function CountryDetails() {
               {country.name.common}
             </h1>
             <p className="text-lg sm:text-xl lg:text-2xl py-1 mb-2">
-              <b>Capital:</b> {country.capital}
+              <b>Capital:</b> {country.capital?.[0] || 'N/A'}
             </p>
             <p className="text-lg sm:text-xl lg:text-2xl py-1 mb-2">
               <b>Region:</b> {country.region}
             </p>
             <p className="text-lg sm:text-xl lg:text-2xl py-1 mb-2">
-              <b>Sub-region:</b> {country.subregion}
+              <b>Sub-region:</b> {country.subregion || 'N/A'}
             </p>
             <p className="text-lg sm:text-xl lg:text-2xl py-1 mb-2">
               <b>Area:</b> {country.area} km&#178;

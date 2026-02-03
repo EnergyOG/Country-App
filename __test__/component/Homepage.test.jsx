@@ -1,5 +1,4 @@
-import {it, expect, describe} from "vitest";
-import { render, screen } from '@testing-library/react'
+import {it, describe} from "vitest";
 import "@testing-library/jest-dom/vitest"
 import HomePage from "../../src/components/feature/HomePage";
 
